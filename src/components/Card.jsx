@@ -37,7 +37,7 @@ function Card({ id, handleChangeScore, shuffleCards }) {
     <div className="card" onClick={handleCardClick}>
       <img src={cardData.artworkUrl} alt={`Pokemon: ${cardData.name}`} />
       <br />
-      <strong>{cardData.name + " " + cardData.clicked}</strong>
+      <strong>{cardData.name}</strong>
     </div>
   );
 }
