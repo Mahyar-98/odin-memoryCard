@@ -5,7 +5,7 @@ import CardList from "./components/CardList";
 
 function App() {
   const [intro, setIntro] = useState(true);
-  const [level, setLevel] = useState(8);
+  const [levelBtn, setLevelBtn] = useState(["Easy", "8"]);
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
   const [reset, setReset] = useState(false);
@@ -16,8 +16,13 @@ function App() {
     ["Hard", 16],
     ["Expert", 20],
   ];
+
   const levelButtons = levels.map((pair) => (
-    <button key={pair[0]} onClick={() => setLevel(pair[1])}>
+    <button
+      key={pair[0]}
+      className={pair[0] === levelBtn[0] ? "active" : ""}
+      onClick={() => setLevelBtn(pair)}
+    >
       {pair[0]}
     </button>
   ));
@@ -63,7 +68,7 @@ function App() {
               <strong>Best Score: {bestScore}</strong>
             </div>
             <CardList
-              num={level}
+              num={levelBtn[1]}
               handleChangeScore={handleChangeScore}
               reset={reset}
               onReset={() => setReset(false)}

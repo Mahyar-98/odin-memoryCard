@@ -4,21 +4,21 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  border: 8px solid rgb(9, 10, 97);
-  border-radius: 50px;
+  border: 3px solid rgb(9, 10, 97);
+  border-radius: 20px;
   padding-top: 30px;
   background-color: aliceblue;
   transition: border-color 0.3s;
   overflow: hidden;
+  max-width: 120px;
+  max-height: 200px;
 }
 
 .card:hover {
-  border: 10px solid rgb(245, 189, 36);
+  border-color: rgb(245, 189, 36);
 }
 
 .card img {
-  max-width: 350px;
-  max-height: 350px;
   width: 85%;
   transition: transform 0.3s;
 }
@@ -29,7 +29,7 @@
 
 .card strong {
   align-self: stretch;
-  font-size: 26pt;
+  font-size: 10pt;
   color: aliceblue;
   background-color: rgb(9, 10, 97);
   padding: 10px;
