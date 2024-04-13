@@ -46,6 +46,7 @@ main {
 
 .intro p {
   font-size: 0.9rem;
+  font-weight: bold;
 }
 
 hr {
@@ -73,10 +74,11 @@ hr {
   padding: 15px;
   background-color: white;
   width: 90px;
+  font-weight: bold;
 }
 
 .level-btns button.active {
-  background-color: rgba(1, 103, 255, 0.315);
+  background-color: rgba(1, 103, 255, 0.178);
 }
 
 .start-btn {
